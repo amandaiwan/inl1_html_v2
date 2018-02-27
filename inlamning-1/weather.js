@@ -1,6 +1,6 @@
 
 const KEY = 'cad845a2da604f313d559dee7ddcc7f3';
-const API_URL = 'http://api.openweathermap.org/data/2.5/forecast?q=nynashamn&appid=' + KEY;
+const API_URL = 'https://api.openweathermap.org/data/2.5/forecast?q=nynashamn&appid=' + KEY;
 
 /*ett objekt som håller ajaxobjektet*/ 
 function HttpGet(url){
@@ -85,15 +85,14 @@ HttpGet.prototype.proceed = function(callback){
         }
     ];
 
-    function printTable() {
+    
+        document.getElementById('inputName').addEventListener('click', (event) => {
 
         var tableDiv = document.getElementById('infoTable');
 
         while(document.getElementById("rowInfo").firstChild){
             document.getElementById("rowInfo").removeChild(document.getElementById("rowInfo").firstChild);
         }
-
-   
 
         for(var i = 0; i<tider.length; i++){
             var tbody = document.getElementById('rowInfo');
@@ -112,12 +111,13 @@ HttpGet.prototype.proceed = function(callback){
             tbody.innerHTML += rowsValue;
         
         }
+        event.preventDefault();
         
         var placeHolder = document.getElementById('inputData').value;
 
         var info = `
-        <p> Inga problem i trafiken! <br> Åker ifrån:  ${placeHolder}</p>`;
+        <p> Inga problem i trafiken! <br> Åker ifrån: ${placeHolder}</p>`;
 
         tableDiv.innerHTML = info;
 
-    }
+    });
