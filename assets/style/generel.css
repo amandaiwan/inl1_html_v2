@@ -1,0 +1,92 @@
+body{
+    font-family: Helvetica, Arial, Sans-Serif;
+}
+
+ .topHeader {
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+}
+
+header section {
+    position: absolute;
+    padding-top: 20px;
+    padding-left:  40px;
+
+}
+
+header section h1{
+     font-size: 60px;
+}
+
+header section p{
+    font-size: 20px;
+    font-weight: 100;
+}
+
+header .headerPhoto{
+    height: 350px;
+    width: 100%;
+}
+
+header section{
+    font-weight: 600;
+    font-size: 30px;
+    
+}
+
+.navbar{
+     box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.container-fluid{
+    padding-top: 30px;
+    padding-bottom: 150px;
+}
+.container .row .col-md-8 .card{
+    border-style: none;
+}
+
+.containBox{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    border-color: #85C1E9;
+    border-style: solid;
+    border-width: 2px;
+    border-top-width: 9px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    min-width: 300px;
+}
+
+
+.containBox table{
+    width: 100%;
+}
+
+table th{
+    font-size: 17px;
+     background-color: #9C2E6D;
+    color: white;
+    height: 40px;
+}
+
+table th, td{
+       text-align: center;
+        padding-top: 8px;
+        padding-bottom:8px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+     box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+footer p{
+    text-align: center;
+    padding-top: 10px;
+} 
